@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+
+
+
+/*background-image: linear-gradient(0,#00FFC000,rgba(255,192,0,.4));
+background-blend-mode: overlay; */
+
+* {
+	font-family: 'Teko';
+}
+
+
+body {
+	margin:0px;
+	padding: 0px;
+	background-color:#413E46;
+}
+
+header {
+	height: 10rem;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 1.5em 6em 1.5em 3em;
+	align-items: center;
+	justify-content: space-between;
+	background-image: linear-gradient(0,#00FFC000,rgba(65, 62, 70, 1));
+	background-blend-mode: overlay;
+	z-index: 1;
+}
+
+header a img {
+	height: 8em;
+	width: auto;
+	border: solid 5px #e5e5e5;
+    border-radius: 3px;
+    padding: .5em;
+}
+
+header nav a {
+	color: #E5E5E5;
+	text-decoration: none;
+	font-size: 2.5em;
+	margin-left: 1.5em;
+	transform: transition;
+	position: relative;
+}
+
+header nav a::before {
+	pointer-events: none;
+	content: '';
+	position: absolute;
+	background: #E5E5E5;
+	top: 70%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0%;
+	transition: 0.3s ease-in-out;
+
+	transform: perspective(1.5em) rotateX(40deg) scale(1, 0.25);
+	filter: blur(1em);
+}
+
+header nav a:hover {
+	text-shadow:
+	0 0 0.25em hsl(0 0% 100% / 0.5),
+	0 0 0.25em currentColor;
+	transition: 200ms ease;
+}
+
+header nav a:hover:before {
+	opacity: 100%;
+}
+
+.new-arrivals {
+	background-image: url(/images/FS641_5\ Power\ Heroes\ Comic\ Pop\ Marvel\ Comics\ -\ 1\ Metre\ 2.png);
+	background-size: contain;
+	width: 100%;
+	height: 40em;
+}
+
+.new-arrivals h2 {
+	color: #E5E5E5;
+	font-size: 4em;
+	padding: 1em 2em;
+	margin: 0;
+}
+
+.new-arrivals h2:after{
+	left:0px;
+	display:block;
+	position:absolute;
+	width:100%;
+	height:3px;
+	margin-top:2px;
+	content: " ";
+	background:#E5E5E5;
+}
+
+
+/* Owl carousel */
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background-color: transparent;
+}
+
+.owl-carousel .item {
+	height: 30rem;
+	background: #E5E5E5;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: medium;
+	color: #E5E5E5;
+	border-radius: 5px;
+}
+
+.owl-carousel .item img {
+	height: 25rem;
+	padding: .5em;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.owl-carousel .item button {
+	margin: .5em;
+	padding-right: .5em;
+	transition: 0.3s ease-in-out;
+}
+
+.owl-carousel .item button:hover {
+	cursor: pointer;
+	box-shadow: 10px 5px 5px #494452;
+	
+}
+
+.blog-posts {
+	margin-top: 10rem;
+}
+
+.blog-post {
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;
+}
+
+.blog-post img {
+	margin: 1rem;
+}
+
+.blog-post-description {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-post-description h3 {
+	font-size: 4rem;
+	color: #E5E5E5;
+}
+
+.blog-post-description p {
+	color: #E5E5E5;
+	font-size: 2rem;
+}
+
+.blog-post-description button {
+	color: #E5E5E5;
+	background-color: #413E46;
+}
+
+.newsletter {
+	position: relative;
+	margin-top: 2rem;
+	background-color: #494452;
+	color: #E5E5E5;
+}
+
+.newsletter h2 {
+	padding: 1rem;
+	text-align: center;
+}
+
+.newsletter .email-input {
+	text-align: center;
+}
+
+.newsletter p {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.video-embedding {
+	padding: 3rem;
+	color: #E5E5E5;
+	background-image: url(/images/FS641_5\ Power\ Heroes\ Comic\ Pop\ Marvel\ Comics\ -\ 1\ Metre\ 2.png);
+	background-size: cover;
+}
+
+.video-embedding h2 {
+	text-align: center;
+}
+
+footer {
+	color: #E5E5E5;
+	margin: 2rem;
+}
+
+footer ul {
+	list-style: none;
+}
+
+
+/* About Page */
+
+h1 {
+	font-size: 3rem;
+	color: #E5E5E5;
+	padding-left: 3rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #E5E5E5;
+	text-align: center;
+}
+
+h3 {
+	color: #E5E5E5;
+	text-align: right;
+	padding-right: 3rem;
+}
+
+p {
+	color: #E5E5E5;
+	padding-left: 3rem;
+}
+
+.pic_text img {
+	height: 20rem;
+	border-radius: 3px;
+	object-fit: cover;
+	margin-left: 3rem;
+	position: relative;
+}
+
+.pic_text p {
+	color: #E5E5E5;
+	padding-left: 3rem;
+	font-size: 1.25rem;
+	max-width: 80%;
+}
+
+button {
+	border: none;
+	font-size: 2rem;
+	color: #E5E5E5;
+	background-color: #867878;
+	border-radius: 3px;
+	padding-left: 3rem;
+	box-shadow: 10px 5px 5px #494452 inset;
+}
+
+
+/* Contact Page */
+
+.form {
+	color: #E5E5E5;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.form input {
+	background-color: #494452;
+	margin: 1rem;
+}
