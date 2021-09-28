@@ -30,6 +30,49 @@ header {
 	z-index: 1;
 }
 
+h1 {
+	font-size: 3rem;
+	color: #E5E5E5;
+	padding-left: 3rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 4em;
+	color: #E5E5E5;
+	text-align: center;
+}
+
+h3 {
+	color: #E5E5E5;
+	text-align: right;
+	padding-right: 3rem;
+}
+
+p {
+	color: #E5E5E5;
+	padding-left: 3rem;
+}
+
+button {
+	border: none;
+	font-size: 2rem;
+	color: #E5E5E5;
+	background-color: #867878;
+	border-radius: 3px;
+	padding-left: 3rem;
+	box-shadow: 10px 5px 5px #494452 inset;
+	text-transform: lowercase;
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+	box-shadow: 10px 5px 5px #494452;
+}
+
+/* Home page */
+
 header a img {
 	height: 8em;
 	width: auto;
@@ -108,7 +151,8 @@ header nav a:hover:before {
 
 .owl-carousel .item {
 	height: 30rem;
-	background: #E5E5E5;
+	margin-bottom: .5rem;
+	background: #6a6770;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -118,6 +162,7 @@ header nav a:hover:before {
 	font-size: medium;
 	color: #E5E5E5;
 	border-radius: 5px;
+	box-shadow: 3px 3px 0.25em #E5E5E5;
 }
 
 .owl-carousel .item img {
@@ -125,12 +170,13 @@ header nav a:hover:before {
 	padding: .5em;
 	object-fit: cover;
 	overflow: hidden;
+	object-position: 50% 50%;
 }
 
 .owl-carousel .item button {
 	margin: .5em;
 	padding-right: .5em;
-	transition: 0.3s ease-in-out;
+	transition: 300ms ease-in-out;
 }
 
 .owl-carousel .item button:hover {
@@ -139,29 +185,70 @@ header nav a:hover:before {
 	
 }
 
+.owl-stage {
+	padding: 0 3em;
+	position: relative;
+}
+
+.owl-nav {
+	margin-top: 1rem;
+	padding: 0 1em;
+	background-color: transparent;
+	color: #E5E5E5;
+	font-size: 6rem;
+	z-index: 1;
+}
+
+.owl-prev,
+.owl-next {
+	position: absolute;
+	top: 35%;
+}
+
+.owl-prev {
+	left: 5%;
+}
+
+.owl-next {
+	right: 5%;
+}
+
+.owl-prev span,
+.owl-next span {
+	background-color: #E5E5E5;
+}
+
+/* Blog posts */
+
 .blog-posts {
 	margin-top: 10rem;
+}
+
+.blog-posts h2 {
+	background-color: #6a6770;
 }
 
 .blog-post {
 	display: flex;
 	flex-direction: row;
-	margin: 1rem;
+	margin: 1rem 4rem;
 }
 
 .blog-post img {
 	margin: 1rem;
+	width: 25%;
 }
 
 .blog-post-description {
 	display: flex;
 	flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+	padding: 2rem;
 }
 
 .blog-post-description h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #E5E5E5;
 }
 
@@ -172,7 +259,7 @@ header nav a:hover:before {
 
 .blog-post-description button {
 	color: #E5E5E5;
-	background-color: #413E46;
+	background-color: #867878;
 }
 
 .newsletter {
@@ -184,27 +271,58 @@ header nav a:hover:before {
 
 .newsletter h2 {
 	padding: 1rem;
+	margin-bottom: 0;
 	text-align: center;
 }
 
 .newsletter .email-input {
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+	background-color: #6a6770;
 	text-align: center;
+}
+
+.newsletter .email-input input {
+	width: 20%;
+	border-radius: 3px;
+	border: 0;
+}
+
+.newsletter .email-input button {
+	margin-left: 2em;
 }
 
 .newsletter p {
 	text-align: center;
 	padding-bottom: 2rem;
+	font-size: 2em;
 }
 
 .video-embedding {
-	padding: 3rem;
+	padding: 2rem;
 	color: #E5E5E5;
 	background-image: url(/images/FS641_5\ Power\ Heroes\ Comic\ Pop\ Marvel\ Comics\ -\ 1\ Metre\ 2.png);
 	background-size: cover;
+	text-align: center;
 }
 
 .video-embedding h2 {
 	text-align: center;
+}
+
+.video-embedding iframe {
+	margin-bottom: 2em;
+}
+
+.video-embedding caption {
+	background-color: #6a6770;
+	z-index: 1;
+	font-size: 2em;
+}
+
+.video-embedding button {
+	margin-left: 2em;
 }
 
 footer {
@@ -219,28 +337,6 @@ footer ul {
 
 /* About Page */
 
-h1 {
-	font-size: 3rem;
-	color: #E5E5E5;
-	padding-left: 3rem;
-	text-transform: uppercase;
-}
-
-h2 {
-	color: #E5E5E5;
-	text-align: center;
-}
-
-h3 {
-	color: #E5E5E5;
-	text-align: right;
-	padding-right: 3rem;
-}
-
-p {
-	color: #E5E5E5;
-	padding-left: 3rem;
-}
 
 .pic_text img {
 	height: 20rem;
@@ -255,16 +351,6 @@ p {
 	padding-left: 3rem;
 	font-size: 1.25rem;
 	max-width: 80%;
-}
-
-button {
-	border: none;
-	font-size: 2rem;
-	color: #E5E5E5;
-	background-color: #867878;
-	border-radius: 3px;
-	padding-left: 3rem;
-	box-shadow: 10px 5px 5px #494452 inset;
 }
 
 
