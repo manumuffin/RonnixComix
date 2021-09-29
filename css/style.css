@@ -236,7 +236,7 @@ header nav a:hover:before {
 
 .blog-post img {
 	margin: 1rem;
-	width: 25%;
+	height: 33rem;
 }
 
 .blog-post-description {
@@ -369,7 +369,7 @@ footer ul {
 	margin: 1rem;
 }
 
-@media only screen and (max-width: 700px)  {
+@media only screen and (max-width: 900px)  {
 
 .blog-posts h2 {
 	font-size: 3em;
